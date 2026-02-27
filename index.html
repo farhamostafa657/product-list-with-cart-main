@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Desserts</h1>
+      </header>
+
+      <section id="products-list" class="products"></section>
+
+      <section id="empty-cart" class="cart">
+        <p>Your Cart (<span>0</span>)</p>
+        <span
+          ><img src="./assets/images/illustration-empty-cart.svg" alt="" />
+        </span>
+        <p>Your added items will appear here</p>
+      </section>
+
+      <section id="full-cart" class="cart-selected"></section>
+
+      <section id="confirm-order" class="order-confirmation">
+        <div class="order-card">
+          <div class="icon-order">
+            <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+          </div>
+
+          <div class="order-header">
+            <h2>Order Confirmed</h2>
+            <p>We hope you enjoy your food!</p>
+          </div>
+
+          <div class="order-items">
+            <div class="order-item">
+              <img
+                class="img-order"
+                src="./assets/images/image-tiramisu-thumbnail.jpg"
+                alt=""
+              />
+
+              <div class="order-info">
+                <p>Classic Tiramisu</p>
+                <div class="item-price">
+                  <span>1x</span>
+                  <span>@ $5.50</span>
+                </div>
+              </div>
+
+              <p class="order-price">$5.50</p>
+            </div>
+
+            <div class="order-item">
+              <img
+                class="img-order"
+                src="./assets/images/image-creme-brulee-thumbnail.jpg"
+                alt=""
+              />
+
+              <div class="order-info">
+                <p>Vanilla Bean Crème Brûlée</p>
+                <div class="item-price">
+                  <span>4x</span>
+                  <span>@ $7.00</span>
+                </div>
+              </div>
+
+              <p class="order-price">$28.00</p>
+            </div>
+
+            <div class="order-item">
+              <img
+                class="img-order"
+                src="./assets/images/image-panna-cotta-thumbnail.jpg"
+                alt=""
+              />
+
+              <div class="order-info">
+                <p>Vanilla Panna Cotta</p>
+                <div class="item-price">
+                  <span>2x</span>
+                  <span>@ $6.50</span>
+                </div>
+              </div>
+
+              <p class="order-price">$13.00</p>
+            </div>
+          </div>
+
+          <div class="order-total">
+            <p>Order Total</p>
+            <h3>$46.50</h3>
+          </div>
+
+          <button class="new-order">Start New Order</button>
+        </div>
+      </section>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Farha Mostafa</a>.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
