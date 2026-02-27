@@ -118,7 +118,7 @@ productList.innerHTML = products.map(
 function renderProducts() {
   productList.innerHTML = products.map(
     (p) => `
-    <div class="product select">
+    <div class="product select"  data-id="${p.id}">
           <img onclick="addToCart(${p.id})" id="img-${p.id}" src="${p.image}" alt="${p.name}" />
           <button id="btn-${p.id}" onclick="addToCart(${p.id})" class="add-btn">
             <span
@@ -373,3 +373,12 @@ function showConfirmOrder() {
     renderProducts();
   });
 }
+
+productList.addEventListener("click", (e) => {
+  const id = e.target.closest(".product")?.dataset.id;
+  if (!id) return;
+
+  if (e.target.matches(".add-btn, .product img")) {
+    addToCart(Number(id));
+  }
+});

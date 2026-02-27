@@ -99,7 +99,8 @@ button span img {
   transform: translateX(-50%);
   color: var(--Rose-900);
   font-weight: 500;
-  z-index: 1;
+  z-index: 10;
+  cursor: pointer;
 }
 
 /*/////////////////////////////////////////////////////////////*/
@@ -122,7 +123,7 @@ button span img {
   transform: translateX(-50%);
   color: var(--Rose-50);
   font-weight: 500;
-  z-index: 2;
+  z-index: 20;
   display: none;
 }
 
@@ -465,7 +466,6 @@ button span img {
   .products {
     grid-column: 1 / 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 0;
     grid-template-columns: 200px 1em 200px 1em 200px 1em;
   }
